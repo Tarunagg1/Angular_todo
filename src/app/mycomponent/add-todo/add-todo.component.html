@@ -1,0 +1,32 @@
+<div class="container">
+  <p>Add Your Todos</p>
+  <div class="my-2">
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="title" class="form-label">Toto Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="Add title"
+          [(ngModel)]="title"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"
+          >Enter Description</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter The Description"
+          id="desc"
+          name="desc"
+          [(ngModel)]="desc"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </form>
+  </div>
+</div>
